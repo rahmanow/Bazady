@@ -863,11 +863,10 @@
     "lodash.memoize" "^4.1.2"
     "lodash.uniq" "^4.5.0"
 
-"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30001181":
-  "version" "1.0.30001181"
-
-"caniuse-lite@^1.0.30001196":
-  "version" "1.0.30001196"
+"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30001181", "caniuse-lite@^1.0.30001196":
+  "integrity" "sha512-LiMlrs1nSKZ8qkNhpUf5KD0Al1KCBE3zaT7OLOwEkagXMEDij98SiOovn9wxVGQpklk9vVC/pUSqgYmkmKOS8g=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001294.tgz"
+  "version" "1.0.30001294"
 
 "caseless@~0.12.0":
   "version" "0.12.0"
@@ -3648,6 +3647,8 @@
     "minimist" "^1.2.5"
 
 "moment@^2.18.1", "moment@^2.19.3", "moment@^2.29.1":
+  "integrity" "sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ=="
+  "resolved" "https://registry.npmjs.org/moment/-/moment-2.29.1.tgz"
   "version" "2.29.1"
 
 "ms@^2.1.1", "ms@2.1.2":

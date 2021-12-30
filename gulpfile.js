@@ -25,10 +25,6 @@ const REPO = ' '; // rahmanow/charwa
 const REPO_READONLY = ' ';
 const CHANGELOG_PATH = path.join(process.cwd(), '.', 'changelog.md');
 
-function serve(done) {
-    livereload.listen();
-    done();
-}
 const livePreview = (done) =>
 {
     browserSync.init({ proxy: "localhost:2368" });
@@ -109,6 +105,7 @@ function devClean(){
 
 function watchFiles(){
     watch('assets/css/**', series(css, previewReload));
+    watch('assets/js/**', series(js, previewReload));
     watch(['*.hbs', 'partials/**/*.hbs'], series(hbs, previewReload));
 }
 
@@ -152,7 +149,7 @@ exports.release = async () => {
         const compatibleWithGhost = result.compatibleWithGhost;
 
         const releasesResponse = await releaseUtils.releases.get({
-            userAgent: 'Casper',
+            userAgent: 'Bazady',
             uri: `https://api.github.com/repos/${REPO_READONLY}/releases`
         });
 
@@ -182,7 +179,7 @@ exports.release = async () => {
             preRelease: false,
             tagName: 'v' + newVersion,
             releaseName: newVersion,
-            userAgent: 'Casper',
+            userAgent: 'Bazady',
             uri: `https://api.github.com/repos/${REPO}/releases`,
             github: {
                 token: githubToken
